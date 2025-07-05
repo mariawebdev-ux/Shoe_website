@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shoe Haven</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Menu / Navigation -->
+  <header>
+    <div class="logo">Shoe Haven</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#product">Shop</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section home">
+    <h1>Welcome to Shoe Haven</h1>
+    <p>Step into style with our finest shoe collections</p>
+  </section>
+
+<section id="product" class="section">
+  <h2>Our products</h2>
+  <div class="products-grid">
+    
+    <!-- Women's Office Shoe -->
+    <div class="product-card">
+      <img src="images/women_shoe.png" alt="Women's Office Shoe" onclick="openPopup('popup1')">
+      <h3>Women's Office Heels</h3>
+      <p><strong>$65</strong></p>
+      <button>Shop Now</button>
+    </div>
+    
+    <!-- Women's Sneakers -->
+    <div class="product-card">
+      <img src="images/women_sneakers.jpg" alt="Women's Sneakers" onclick="openPopup('popup2')">
+      <h3>Women's White Sneakers</h3>
+      <p><strong>$50</strong></p>
+      <button>Shop Now</button>
+    </div>
+    
+    <!-- Men's Sneakers -->
+    <div class="product-card">
+      <img src="images/men_sneakers.jpg" alt="Men's Sneakers" onclick="openPopup('popup3')">
+      <h3>Men's Sport Sneakers</h3>
+      <p><strong>$55</strong></p>
+      <button>Shop Now</button>
+    </div>
+    
+    <!-- Men's Office Shoe -->
+    <div class="product-card">
+      <img src="images/men_shoe.png" alt="Men's Office Shoe" onclick="openPopup('popup4')">
+      <h3>Men's Leather Loafers</h3>
+      <p><strong>$75</strong></p>
+      <button>Shop Now</button>
+    </div>
+    
+  </div>
+</section>
+
+<!-- Product Detail Popups -->
+<div class="popup" id="popup1">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup1')">&times;</span>
+    <h3>Women's Office Heels</h3>
+    <p>Elegant, perfect for the workplace. Soft padding for all-day comfort.</p>
+  </div>
+</div>
+
+<div class="popup" id="popup2">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup2')">&times;</span>
+    <h3>Women's White Sneakers</h3>
+    <p>Trendy sneakers made with breathable fabric and non-slip soles.</p>
+  </div>
+</div>
+
+<div class="popup" id="popup3">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup3')">&times;</span>
+    <h3>Men's Sport Sneakers</h3>
+    <p>Ideal for workouts or casual wear. Lightweight and durable build.</p>
+  </div>
+</div>
+
+<div class="popup" id="popup4">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup4')">&times;</span>
+    <h3>Men's Leather Loafers</h3>
+    <p>Classic formal shoes with smooth finish and cushioned insoles.</p>
+  </div>
+</div>
+
+<!-- Reviews Section -->
+<section id="reviews" class="section">
+  <h2>Customer Reviews</h2>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <img src="images/sarah.png" alt="Sarah" class="review-img" />
+      <div class="review-content">
+        <p>"Absolutely love the shoes! Very comfy and stylish."</p>
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <p class="review-name">- Sarah</p>
+      </div>
+    </div>
+    
+    <div class="review-card">
+      <img src="images/john.png" alt="John" class="review-img" />
+      <div class="review-content">
+        <p>"Great customer service and fast delivery."</p>
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="review-name">- John</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+<footer>
+  <p>&copy; 2025 Adeleke Favour. All rights reserved.</p>
+  <p>234 Fashion Street, Lagos, Nigeria</p>
+  <p>Email: favouroluwatobi15@gmail.com | Phone: +234 704 775 2089</p>
+</footer>
+<script>
+  function openPopup(id) {
+    document.getElementById(id).style.display = 'flex';
+  }
+  
+  function closePopup(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+</script>
+</body>
+</html>
